@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="about.css">
+    <title>About half - About</title>
+</head>
+<body>
+    <div class='whole'>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        </div>
+        <script>
+            function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            }
+            
+            function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+            }
+        </script>
+        
+        <h1>About us</h1>
+        <p>We are about half; Diederik Zuurmond, Noah Dettmann and Conrad Zuurmond. We've been making music together since high school and we're not planning to stop anytime soon. Keep an eye out for our new singles on spotify because we're always working on something new.</p>
+        <img src="abouthalfbw.jpg" alt="black and white picture">
+    </div>
+</body>

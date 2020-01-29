@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="abouthalf.css">
+    <title>About Half</title>
+</head>
+<body>
+    <div class='whole'>
+        <div class='imageContainer'>
+            <img src="abouthalfconcert.jpg" alt='About half concert picture'>
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div id="main">
+                <button class="openbtn" onclick="openNav()">&#9776;</button>
+            </div>
+            <script>
+                function openNav() {
+                  document.getElementById("mySidebar").style.width = "250px";
+                  document.getElementById("main").style.marginLeft = "250px";
+                }
+                
+                function closeNav() {
+                  document.getElementById("mySidebar").style.width = "0";
+                  document.getElementById("main").style.marginLeft= "0";
+                }
+            </script>
+            <div class='abouthalf'>About half</div>
+            <div class='abouttext'> We are about half; Diederik Zuurmond, Noah Dettmann and Conrad Zuurmond.<br> 
+                We've been making music together since high school and we're not planning to stop anytime soon. <br>
+                Keep an eye out for our new singles on spotify because we're always working on something new.  </div>
+        </div>
+        <div class='text'>
+            <p> Check out our spotify page here! </p>
+        </div>
+        <div class="spotify">
+            <a href='https://open.spotify.com/artist/75YUj8KuggObbdozZMptV7?si=PsuuhmCcStKrc97FjD0X9w' target="_blank">
+                <div class="spotifyLogo">
+                    <iframe src="https://open.spotify.com/embed/track/5K411ZRgRjY2oM6ezSWUge" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </a>
+        </div>
+        <div class='video-container'>
+            <video autoplay muted controls loop>
+                <source src="abouthalfbwvideo.mp4" type="video/mp4">
+            </video>
+        </div> 
+        <div class=flexcontainer>
+            <div>
+                <a href='https://www.facebook.com/AboutHalf3/' target="_blank">
+                    <img src="fblogo.png" alt='Facebook'>
+                </a>
+            </div>
+            <div>
+                <a href='https://www.instagram.com/abouthalfofficial/?hl=en' target="_blank">
+                    <img src="instalogo.png" alt='Instagram'>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+

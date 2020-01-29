@@ -1,0 +1,151 @@
+
+.whole {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+}
+
+.whole .sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  
+/* The sidebar links */
+.whole .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.whole .sidebar a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.whole .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.whole .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.whole .openbtn:hover {
+    background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+
+.whole .imageContainer img {
+    width: 100%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.whole .imageContainer .abouthalf {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Courier New', Courier, monospace ;
+    font-size: 70px;
+    letter-spacing: 20px;
+
+}
+
+.whole .imageContainer .abouttext {
+    color: white;
+    font-family: 'Courier New', Courier, monospace ;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 35px;
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.whole .text p{
+    color: black;
+    font-family: 'Courier New', Courier, monospace ;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 35px;
+    margin-top: 15%;
+}
+
+.whole .spotify .spotifyLogo iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+.whole .video-container {
+    text-align: center;
+    margin-top: 20%;
+}
+
+.whole .video-container video {
+    width: 100%;
+}
+
+.whole .flexcontainer {
+    display: flex;
+    flex-direction: row;
+    margin-left: 45%;
+    margin-top: 3%;
+} 
+
+.flex-container > div {
+    width: 100px;
+    margin-top: 5%;
+    text-align: center;
+    line-height: 75px;
+    margin: 5%;
+}
+
+.flexcontainer > div img{
+    width: 40px;
+    margin: 10px;
+}
